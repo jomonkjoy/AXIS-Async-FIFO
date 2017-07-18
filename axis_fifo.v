@@ -37,7 +37,7 @@ fifo #(
     .ASIZE  ( ADDR_DEPTH )
 ) fifo (
     .wfull  ( s_full ) ,
-    .wdata  ( {s_last, s_tkeep, s_tdata} ) ,
+    .wdata  ( {s_tlast, s_tkeep, s_tdata} ) ,
     .winc   ( s_tvalid & s_tready ) , 
     .wclk   ( s_aclk ) , 
     .wrst_n ( s_areset_n ) ,
